@@ -29,3 +29,9 @@ resource "aws_iam_role_policy_attachment" "list" {
   count      = "${length(var.policy_arn_list)}"
   policy_arn = "${var.policy_arn_list[count.index]}"
 }
+
+# Account
+
+data "aws_caller_identity" "self" {}
+
+data "aws_iam_account_alias" "self" {}
