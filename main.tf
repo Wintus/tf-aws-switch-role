@@ -1,17 +1,3 @@
-variable "name" {}
-
-variable "path" {
-  default = "/switch-role/"
-}
-
-variable "base_account_id" {}
-
-variable "policy_arn_list" {
-  type = "list"
-
-  default = []
-}
-
 # Role
 
 resource "aws_iam_role" "switch" {
