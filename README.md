@@ -1,2 +1,2 @@
 # tf-aws-switch-role
-Module for AWS switch role
+Terraform module for AWS switch role
